@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobiletter</title>
+    <script src="index.js"></script>
+</head>
+<body>
+
+<h1>Kjøp billetter</h1>
+
+<table>
+    <tr><td>Velg film:
+        <select id="film" required>
+            <option value="" disabled selected>Velg her</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Terminator">Terminator</option>
+            <option value="Terkel i knipe">Terkel i knipe</option>
+        </select></td></tr>
+
+    <tr><td>Antall seter:</td><td><input type="number" id="seter"/></td></tr>
+    <tr><td>Fornavn:</td><td><input type="text" id="fornavn"/></td></tr>
+    <tr><td>Etternavn:</td><td><input type="text" id="etternavn"/></td></tr>
+    <tr><td>Tlfnummer:</td><td><input type="text" id="tlf"/></td></tr>
+    <tr><td>E-post:</td><td><input type="mail" id="mail"/></td></tr>
+    <tr><td><button onclick="registrerBillett()">Kjøp billetter</button></td></tr>
+</table>
+
+<h2>Kjøpte Billetter</h2>
+<div id="billetter"></div>
+
+<button onclick="slettAlt()">Slett alle billetter</button>
+
+</body>
+</html>
